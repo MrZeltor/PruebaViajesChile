@@ -1,5 +1,7 @@
-var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-  return new bootstrap.Tooltip(tooltipTriggerEl)
-})
-
+$(document).ready(function() {
+    // Asignar un manejador de eventos al hacer clic en el botón
+    $('#enviarCorreoBtn').click(function() {
+        // Mostrar una alerta al hacer clic en el botón
+        alert('¡El correo fue enviado correctamente!');
+    });
+});
