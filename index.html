@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <!-- estandar de caracteres -->
     <meta charset="UTF-8">
@@ -21,23 +22,26 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous">
-    </script>
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
     <!-- Fontawesom v.6 -->
     <script src="https://kit.fontawesome.com/7d4f10acf2.js" crossorigin="anonymous">
     </script>
+    <!-- se agrega jquery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
+
 <body>
     <!-- Barra de navegacion + carrusel de imagenes -->
     <header>
         <!--Navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
             <div class="container">
-              <a class="navbar-brand" href="#">
-                <img src="assets/img/viajes.svg" alt="logo" width="30" height="24" class="d-inline-block align-text-top">
-                Viajes Chile
-              </a>
+                <a class="navbar-brand" href="#">
+                    <img src="assets/img/viajes.svg" alt="logo" width="30" height="24"
+                        class="d-inline-block align-text-top">
+                    Viajes Chile
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -49,16 +53,18 @@
                             <a class="nav-link text-white" href="#inicio">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#quienessomos" data-toggle="tooltip" data-placement="right"
-                            title="Este botón te dirige directamente a la sección">Quienes Somos</a>
+                            <a class="nav-link text-white" href="#quienessomos" data-toggle="tooltip"
+                                data-placement="right" title="Este botón te dirige directamente a la sección">Quienes
+                                Somos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#destacados" data-toggle="tooltip" data-placement="right"
-                            title="Este botón te dirige directamente a la sección">Destacados</a>
+                            <a class="nav-link text-white" href="#destacados" data-toggle="tooltip"
+                                data-placement="right"
+                                title="Este botón te dirige directamente a la sección">Destacados</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white" href="#contacto" data-toggle="tooltip" data-placement="right"
-                            title="Este botón te dirige directamente a la sección">Contacto</a>
+                                title="Este botón te dirige directamente a la sección">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -69,23 +75,25 @@
         <div class="carrusel" id="inicio">
             <div id="carouselViajesChile" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="Imagen desierto de Atacama">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="assets/img/carousel2.jpg" class="d-block w-100" alt="Iamgen Rapa Nui">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="assets/img/carousel3.jpg" class="d-block w-100" alt="Imagen Pingüino">
-                  </div>
+                    <div class="carousel-item active">
+                        <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="Imagen desierto de Atacama">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/carousel2.jpg" class="d-block w-100" alt="Iamgen Rapa Nui">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/carousel3.jpg" class="d-block w-100" alt="Imagen Pingüino">
+                    </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
                 </button>
             </div>
         </div>
@@ -102,7 +110,7 @@
             <hr class="pt-1">
         </div>
         <!-- Tres columnas con texto e iconos de fontawesom-->
-        <div class="container">        
+        <div class="container">
             <div class="row">
                 <div class="col">
                     <div class="card text-white bg-dark">
@@ -110,14 +118,40 @@
                             <i class="fa-solid fa-plane"></i>
                         </div>
                         <div class="card-body" style="background-color: #000000;">
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam rerum nisi unde vel fuga natus libero voluptates laborum odio quisquam facere, repudiandae repellat. Nostrum eligendi, architecto modi doloribus velit obcaecati magni quibusdam voluptate ex rerum perferendis dignissimos incidunt corporis iusto quaerat? Consequatur animi, voluptatum ratione voluptatem id beatae odit dignissimos nemo ullam explicabo nesciunt adipisci! Laborum quaerat nisi qui saepe atque ab voluptas excepturi mollitia aut quisquam cum reiciendis maiores voluptatibus harum eaque dolorem, eveniet pariatur animi iure. Explicabo distinctio assumenda veniam voluptates natus voluptatum esse error nam, iure quia obcaecati libero repellat laborum quod temporibus aut rem quam fugit ad alias ut vitae vel. Molestiae totam velit repellat, maxime eveniet ducimus delectus veritatis tempora impedit expedita temporibus exercitationem in beatae natus necessitatibus perferendis labore sequi porro obcaecati aliquam veniam provident. Accusantium autem esse quo quibusdam asperiores soluta, maiores sed, accusamus similique atque magnam! Necessitatibus dignissimos rerum aut non nesciunt.</p>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam rerum
+                                nisi unde vel fuga natus libero voluptates laborum odio quisquam facere, repudiandae
+                                repellat. Nostrum eligendi, architecto modi doloribus velit obcaecati magni quibusdam
+                                voluptate ex rerum perferendis dignissimos incidunt corporis iusto quaerat? Consequatur
+                                animi, voluptatum ratione voluptatem id beatae odit dignissimos nemo ullam explicabo
+                                nesciunt adipisci! Laborum quaerat nisi qui saepe atque ab voluptas excepturi mollitia
+                                aut quisquam cum reiciendis maiores voluptatibus harum eaque dolorem, eveniet pariatur
+                                animi iure. Explicabo distinctio assumenda veniam voluptates natus voluptatum esse error
+                                nam, iure quia obcaecati libero repellat laborum quod temporibus aut rem quam fugit ad
+                                alias ut vitae vel. Molestiae totam velit repellat, maxime eveniet ducimus delectus
+                                veritatis tempora impedit expedita temporibus exercitationem in beatae natus
+                                necessitatibus perferendis labore sequi porro obcaecati aliquam veniam provident.
+                                Accusantium autem esse quo quibusdam asperiores soluta, maiores sed, accusamus similique
+                                atque magnam! Necessitatibus dignissimos rerum aut non nesciunt.</p>
+                        </div>
                     </div>
                 </div>
-            </div> 
                 <div class="col">
                     <div class="card text-white bg-dark card-border-radius:0">
                         <div class="card-body" style="background-color: #000000;">
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam rerum nisi unde vel fuga natus libero voluptates laborum odio quisquam facere, repudiandae repellat. Nostrum eligendi, architecto modi doloribus velit obcaecati magni quibusdam voluptate ex rerum perferendis dignissimos incidunt corporis iusto quaerat? Consequatur animi, voluptatum ratione voluptatem id beatae odit dignissimos nemo ullam explicabo nesciunt adipisci! Laborum quaerat nisi qui saepe atque ab voluptas excepturi mollitia aut quisquam cum reiciendis maiores voluptatibus harum eaque dolorem, eveniet pariatur animi iure. Explicabo distinctio assumenda veniam voluptates natus voluptatum esse error nam, iure quia obcaecati libero repellat laborum quod temporibus aut rem quam fugit ad alias ut vitae vel. Molestiae totam velit repellat, maxime eveniet ducimus delectus veritatis tempora impedit expedita temporibus exercitationem in beatae natus necessitatibus perferendis labore sequi porro obcaecati aliquam veniam provident. Accusantium autem esse quo quibusdam asperiores soluta, maiores sed, accusamus similique atque magnam! Necessitatibus dignissimos rerum aut non nesciunt.</p>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam rerum
+                                nisi unde vel fuga natus libero voluptates laborum odio quisquam facere, repudiandae
+                                repellat. Nostrum eligendi, architecto modi doloribus velit obcaecati magni quibusdam
+                                voluptate ex rerum perferendis dignissimos incidunt corporis iusto quaerat? Consequatur
+                                animi, voluptatum ratione voluptatem id beatae odit dignissimos nemo ullam explicabo
+                                nesciunt adipisci! Laborum quaerat nisi qui saepe atque ab voluptas excepturi mollitia
+                                aut quisquam cum reiciendis maiores voluptatibus harum eaque dolorem, eveniet pariatur
+                                animi iure. Explicabo distinctio assumenda veniam voluptates natus voluptatum esse error
+                                nam, iure quia obcaecati libero repellat laborum quod temporibus aut rem quam fugit ad
+                                alias ut vitae vel. Molestiae totam velit repellat, maxime eveniet ducimus delectus
+                                veritatis tempora impedit expedita temporibus exercitationem in beatae natus
+                                necessitatibus perferendis labore sequi porro obcaecati aliquam veniam provident.
+                                Accusantium autem esse quo quibusdam asperiores soluta, maiores sed, accusamus similique
+                                atque magnam! Necessitatibus dignissimos rerum aut non nesciunt.</p>
                         </div>
                         <div class="card-footer text-white text-center" style="background-color: #00A5BB;">
                             <i class="fa-solid fa-mountain"></i>
@@ -130,13 +164,26 @@
                             <i class="fa-solid fa-route"></i>
                         </div>
                         <div class="card-body" style="background-color: #000000;">
-                            <p class="card-text text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam rerum nisi unde vel fuga natus libero voluptates laborum odio quisquam facere, repudiandae repellat. Nostrum eligendi, architecto modi doloribus velit obcaecati magni quibusdam voluptate ex rerum perferendis dignissimos incidunt corporis iusto quaerat? Consequatur animi, voluptatum ratione voluptatem id beatae odit dignissimos nemo ullam explicabo nesciunt adipisci! Laborum quaerat nisi qui saepe atque ab voluptas excepturi mollitia aut quisquam cum reiciendis maiores voluptatibus harum eaque dolorem, eveniet pariatur animi iure. Explicabo distinctio assumenda veniam voluptates natus voluptatum esse error nam, iure quia obcaecati libero repellat laborum quod temporibus aut rem quam fugit ad alias ut vitae vel. Molestiae totam velit repellat, maxime eveniet ducimus delectus veritatis tempora impedit expedita temporibus exercitationem in beatae natus necessitatibus perferendis labore sequi porro obcaecati aliquam veniam provident. Accusantium autem esse quo quibusdam asperiores soluta, maiores sed, accusamus similique atque magnam! Necessitatibus dignissimos rerum aut non nesciunt.</p>
+                            <p class="card-text text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Ipsam rerum nisi unde vel fuga natus libero voluptates laborum odio quisquam facere,
+                                repudiandae repellat. Nostrum eligendi, architecto modi doloribus velit obcaecati magni
+                                quibusdam voluptate ex rerum perferendis dignissimos incidunt corporis iusto quaerat?
+                                Consequatur animi, voluptatum ratione voluptatem id beatae odit dignissimos nemo ullam
+                                explicabo nesciunt adipisci! Laborum quaerat nisi qui saepe atque ab voluptas excepturi
+                                mollitia aut quisquam cum reiciendis maiores voluptatibus harum eaque dolorem, eveniet
+                                pariatur animi iure. Explicabo distinctio assumenda veniam voluptates natus voluptatum
+                                esse error nam, iure quia obcaecati libero repellat laborum quod temporibus aut rem quam
+                                fugit ad alias ut vitae vel. Molestiae totam velit repellat, maxime eveniet ducimus
+                                delectus veritatis tempora impedit expedita temporibus exercitationem in beatae natus
+                                necessitatibus perferendis labore sequi porro obcaecati aliquam veniam provident.
+                                Accusantium autem esse quo quibusdam asperiores soluta, maiores sed, accusamus similique
+                                atque magnam! Necessitatibus dignissimos rerum aut non nesciunt.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Fin de las tres columnas -->    
+        <!-- Fin de las tres columnas -->
     </section>
     <!-- Destacados (cards) -->
     <main>
@@ -152,74 +199,98 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-3 mb-3">
-                  <div class="card text-white" style="width: 18rem; height: 100%; background-color: #00A5BB;">
-                    <img src="assets/img/card1.jpg" height="200" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
-                      <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam fugiat sequi adipisci molestiae iste quas provident, porro, eligendi possimus enim velit praesentium veniam temporibus tempore maxime alias. Accusantium distinctio in doloribus adipisci? Voluptate, illo praesentium laudantium esse voluptatem assumenda sit commodi rem voluptas ipsum quas amet, quibusdam in voluptatibus non.</p>
+                    <div class="card text-white" style="width: 18rem; height: 100%; background-color: #00A5BB;">
+                        <img src="assets/img/card1.jpg" height="200" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam fugiat
+                                sequi adipisci molestiae iste quas provident, porro, eligendi possimus enim velit
+                                praesentium veniam temporibus tempore maxime alias. Accusantium distinctio in doloribus
+                                adipisci? Voluptate, illo praesentium laudantium esse voluptatem assumenda sit commodi
+                                rem voluptas ipsum quas amet, quibusdam in voluptatibus non.</p>
+                        </div>
                     </div>
-                  </div>
                 </div>
                 <div class="col-12 col-lg-3 mb-3">
-                  <div class="card text-white" style="width: 18rem; height: 100%; background-color: #00A5BB;">
-                    <img src="assets/img/card2.jpg" height="200" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
-                      <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi, recusandae id. Vero libero repudiandae similique laboriosam at labore ullam, quod perspiciatis alias quae praesentium magnam possimus animi, laborum voluptatem minima, enim accusantium eveniet odio? Perspiciatis, consequatur, iure esse perferendis voluptatibus incidunt optio iste quam sequi nesciunt facilis ad nihil dolorum.</p>
+                    <div class="card text-white" style="width: 18rem; height: 100%; background-color: #00A5BB;">
+                        <img src="assets/img/card2.jpg" height="200" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi,
+                                recusandae id. Vero libero repudiandae similique laboriosam at labore ullam, quod
+                                perspiciatis alias quae praesentium magnam possimus animi, laborum voluptatem minima,
+                                enim accusantium eveniet odio? Perspiciatis, consequatur, iure esse perferendis
+                                voluptatibus incidunt optio iste quam sequi nesciunt facilis ad nihil dolorum.</p>
+                        </div>
                     </div>
-                  </div>
                 </div>
                 <div class="col-12 col-lg-3 mb-3">
-                  <div class="card text-white" style="width: 18rem; height: 100%; background-color: #00A5BB;">
-                    <img src="assets/img/card3.jpg" height="200" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
-                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate fuga beatae, ipsam laudantium aperiam ullam blanditiis ut exercitationem voluptatem? Voluptates amet laudantium quos est beatae aperiam voluptate illum, perspiciatis omnis enim vel repellat officiis, dignissimos laboriosam, consectetur quisquam eos excepturi officia? Beatae ipsa perspiciatis ab dolore sunt atque recusandae blanditiis.</p>
+                    <div class="card text-white" style="width: 18rem; height: 100%; background-color: #00A5BB;">
+                        <img src="assets/img/card3.jpg" height="200" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate fuga
+                                beatae, ipsam laudantium aperiam ullam blanditiis ut exercitationem voluptatem?
+                                Voluptates amet laudantium quos est beatae aperiam voluptate illum, perspiciatis omnis
+                                enim vel repellat officiis, dignissimos laboriosam, consectetur quisquam eos excepturi
+                                officia? Beatae ipsa perspiciatis ab dolore sunt atque recusandae blanditiis.</p>
+                        </div>
                     </div>
-                  </div>
                 </div>
                 <div class="col-12 col-lg-3 mb-3">
-                  <div class="card text-white" style="width: 18rem; height: 100%; background-color: #00A5BB;">
-                    <img src="assets/img/card4.jpg" height="200" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
-                      <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident exercitationem ad praesentium fugit ducimus soluta minus debitis nam, iste fuga mollitia at deserunt quo numquam eveniet? Perspiciatis quisquam quis culpa saepe, fugiat esse quia cupiditate a repellat accusantium aut officiis dolores voluptas! Itaque modi autem porro non voluptas eligendi adipisci.</p>
+                    <div class="card text-white" style="width: 18rem; height: 100%; background-color: #00A5BB;">
+                        <img src="assets/img/card4.jpg" height="200" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident
+                                exercitationem ad praesentium fugit ducimus soluta minus debitis nam, iste fuga mollitia
+                                at deserunt quo numquam eveniet? Perspiciatis quisquam quis culpa saepe, fugiat esse
+                                quia cupiditate a repellat accusantium aut officiis dolores voluptas! Itaque modi autem
+                                porro non voluptas eligendi adipisci.</p>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
+            </div>
         </div>
         <!-- Fin de las cards-->
     </main>
     <!-- Formulario de contacto -->
     <section>
+        <p class="h1 text-center text-white">Contacto</p>
+                <!--Linea horizontal-->
+                <div class="container-fluid" >
+                    <hr class="pt-1">
+                </div>
         <div class="container form" id="formulario">
             <form class="py-4">
-                <h2 class="text-center fw-bold">Contácto</h2>
-
+                
                 <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Nombre</label>
-                  <input type="text" class="form-control" id="nombte" aria-describedby="nombreHelp" placeholder="Nombre">
+                    <label for="exampleInputEmail1" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombte" aria-describedby="nombreHelp"
+                        placeholder="Nombre">
                 </div>
 
                 <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Correo Electrónico</label>
-                  <input type="email" class="form-control" id="exampleInputemail1" placeholder="Correo Electrónico">
+                    <label for="exampleInputEmail1" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="exampleInputemail1" placeholder="Correo Electrónico">
                 </div>
 
                 <div class="mb-3">
                     <label for="coments1" class="form-label">Mensaje</label>
-                    <input type="text" class="form-control py-4" id="exampleInputemail1" placeholder="Escribe aquí tu mensaje">
-                  </div>
+                    <input type="text" class="form-control py-4" id="exampleInputemail1"
+                        placeholder="Escribe aquí tu mensaje">
+                </div>
 
-                <div class="mx-auto text-left" id="boton">
-                    <button type="button" class="btn btn-primary">Enviar</button>
+                <div class="mx-auto text-left">
+                    <button id="enviarCorreoBtn" type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Enviar Correo">
+                        Enviar 
+                      </button>
 
                 </div>
 
-                
-                
-              </form>
+
+
+            </form>
         </div>
     </section>
     <!-- Barra inferior + iconos fontawesom -->
@@ -236,7 +307,7 @@
                     </a>
                     <a href="https://linkedin.com/" target="_blank">
                         <i class="fab fa-linkedin fa-2x mx-1" style="color: white;"></i>
-                    </a>    
+                    </a>
                     <a href="https://twitter.com/" target="_blank">
                         <i class="fab fa-twitter-square fa-2x mx-1" style="color: white;"></i>
 
@@ -246,7 +317,10 @@
                     </a>
                 </div>
             </div>
-        </div>    
+        </div>
     </footer>
+
+    <script src="/assets/js/script.js"></script>
 </body>
+
 </html>
